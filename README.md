@@ -1,6 +1,8 @@
 # Remote Data Acquisition Using an Open-Source Distributed Control System
-Connect your Sensors to the Network using EPICS in Your Next Electronics Project
+Connect your Sensors to the Network using EPICS in Your Next Electronics Project<br>
+
 ***
+Click <a href="https://www.amazon.com/dp/B0CRKPKGHN">here<a> to view the link to the book.<br>
 <img src="arduino_and_esp32_sensor_systems.png">
 
 Scope:
