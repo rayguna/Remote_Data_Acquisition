@@ -6,7 +6,14 @@ Click <a href="https://www.amazon.com/dp/B0CRKPKGHN">here<a> to view the link to
 <img src="arduino_and_esp32_sensor_systems.png">
 
 Scope:
-This repository houses Python, C++, and EPICS-related files that are used to connect multiple sensors to the local network via an open-source EPICS distributed control system. The sensors are interfaced to the network via Arduino Uno and ESP32-S3 microcontrollers. The Arduino Uno connects to the internet through ethernet communication, whereas ESP32-S3 connects to the internet through a 2.4 GHz Wi-Fi communication.
+This repository houses Python, C++, and EPICS-related files that are used to connect multiple sensors to the local network via an open-source EPICS distributed control system. The sensors are interfaced to the network via Arduino Uno and ESP32-S3 microcontrollers. 
+
+The Arduino Uno connects to the internet through ethernet communication, whereas ESP32-S3 connects to the internet through a 2.4 GHz Wi-Fi communication. The sensors include:
+- Humidity and temperature
+- Light-Dependent Resistor
+- Turbidity
+- Total Dissolved Solids (TDS)
+- Water level 
 ***
 
 - Chapter_2_Controlling_Arduino_Built-in_LED_light [<a href="https://github.com/rayguna/Remote_Data_Acquisition/tree/main/Chpt2">Link</a>]
