@@ -1,0 +1,7 @@
+record(ao, "led:set"){
+    field(DESC, "Arduino builtin LED")
+    field(DTYP, "stream")
+    field(OUT, "@arduino.proto set_digital $(PORT)")
+    field(DRVL, "0")
+    field(DRVH, "1")
+}

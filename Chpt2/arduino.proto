@@ -1,0 +1,6 @@
+Terminator = CR LF;
+
+set_digital{
+    out "%d";	
+    ExtraInput = Ignore;
+}

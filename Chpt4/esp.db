@@ -1,0 +1,33 @@
+record(ai, "esp:dhtt"){
+    field(DESC, "DHT output")
+    field(DTYP, "stream")
+    field(INP, "@esp.proto get_esp_dhtt $(PORT)")
+    field(SCAN, "1 second")
+    field(PINI, "YES")
+}
+
+record(ai, "esp:dhth"){
+    field(DESC, "DHT output")
+    field(DTYP, "stream")
+    field(INP, "@esp.proto get_esp_dhth $(PORT)")
+    field(SCAN, "1 second")
+    field(PINI, "YES")
+}
+
+record(ai, "esp:tur"){
+    field(DESC, "TURBIDITY output")
+    field(DTYP, "stream")
+    field(INP, "@esp.proto get_esp_tur $(PORT)")
+    field(SCAN, "5 second")
+    field(PINI, "YES")
+}
+
+
+record(ai, "esp:lt"){
+    field(DESC, "LDR output")
+    field(DTYP, "stream")
+    field(INP, "@esp.proto get_esp_lt $(PORT)")
+    field(SCAN, "5 second")
+    field(PINI, "YES")
+}
+

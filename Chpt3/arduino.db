@@ -1,0 +1,31 @@
+record(ai, "uno:tds"){
+    field(DESC, "TDS output")
+    field(DTYP, "stream")
+    field(INP, "@arduino.proto get_uno_tds $(PORT)")
+    field(SCAN, "5 second")
+    field(PINI, "YES")
+}
+
+record(ai, "uno:wl"){
+    field(DESC, "WL output")
+    field(DTYP, "stream")
+    field(INP, "@arduino.proto get_uno_wl $(PORT)")
+    field(SCAN, "5 second")
+    field(PINI, "YES")
+}
+
+record(ai, "uno:dhtt"){
+    field(DESC, "DHTT output")
+    field(DTYP, "stream")
+    field(INP, "@arduino.proto get_uno_dhtt $(PORT)")
+    field(SCAN, "1 second")
+    field(PINI, "YES")
+}
+
+record(ai, "uno:dhth"){
+    field(DESC, "DHTH output")
+    field(DTYP, "stream")
+    field(INP, "@arduino.proto get_uno_dhth $(PORT)")
+    field(SCAN, "1 second")
+    field(PINI, "YES")
+}

@@ -1,0 +1,48 @@
+Terminator = CR LF;
+InTerminator = $Terminator;
+OutTerminator = $Terminator;
+
+ReplyTimeout=5000; #adjust as needed
+ReadTimeout=5000; #adjust as needed
+WriteTimeout = 500; #adjust as needed
+
+
+get_uno_tds {
+    PollPeriod = 50;
+    out "TDS";
+    in "TDS %i";
+    #@init {out "TDS"; in "TDS %i";}
+    #@mismatch{disconnect;} 	
+    ExtraInput = Ignore;
+    wait 50;
+}
+
+get_uno_wl {
+    PollPeriod = 50;
+    out "WL";
+    in "WL %i";
+    #@init {out "WL"; in "WL %i";}
+    #@mismatch{disconnect;} 	
+    ExtraInput = Ignore;
+    wait 50;
+}
+
+get_uno_dhtt {
+    PollPeriod = 50;
+    out "DHTT";
+    in "DHTT %f";
+    #@init {out "DHTT"; in "DHTT %f";}
+    #@mismatch{disconnect;} 	
+    ExtraInput = Ignore;
+    wait 50;
+}
+
+get_uno_dhth {
+    PollPeriod = 50;
+    out "DHTH";
+    in "DHTH %f";
+    #@init {out "DHTH"; in "DHTH %f";}
+    #@mismatch{disconnect;} 	
+    ExtraInput = Ignore;
+    wait 50;
+}

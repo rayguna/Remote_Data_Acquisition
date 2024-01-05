@@ -1,0 +1,48 @@
+Terminator = CR LF;
+InTerminator = $Terminator; 
+OutTerminator = $Terminator; 
+
+ReplyTimeout=5000; #adjust as needed
+ReadTimeout=5000; #adjust as needed
+WriteTimeout = 500; #adjust as needed
+
+
+get_esp_dhtt {
+    PollPeriod = 50;
+    out "DHTT";
+    in "DHTT %f";
+    #@init {out "DHTT"; in "DHTT %f";}
+    #@mismatch{disconnect;} 
+    ExtraInput = Ignore;
+    wait 50;
+}
+
+get_esp_dhth {
+    PollPeriod = 50;
+    out "DHTH";
+    in "DHTH %f";
+    #@init {out "DHTH"; in "DHTH %f";}
+    #@mismatch{disconnect;} 
+    ExtraInput = Ignore;
+    wait 50;
+}
+
+get_esp_tur {
+    PollPeriod = 50;
+    out "TUR";
+    in "TUR %f";
+    #@init {out "TUR"; in "TUR %f";}
+    #@mismatch{disconnect;} 
+    ExtraInput = Ignore;
+    wait 50;
+}
+
+get_esp_lt {
+    PollPeriod = 50;
+    out "LT";
+    in "LT %f";
+    #@init {out "LT"; in "LT %f";}
+    #@mismatch{disconnect;} 
+    ExtraInput = Ignore;
+    wait 50;
+}
