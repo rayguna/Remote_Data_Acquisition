@@ -20,9 +20,9 @@ This repository houses Python, C++, and EPICS-related files that are used to con
 
 - Chapter_6_The_Celer_Opus_Hydroponics
 
-- Appendix_C_Testing_Arduino_Uno_Serial_Communication
-
 - Appendix_D_Testing_Arduino_Ethernet_Communication
+
+- Appendix_E_Control_Arduino_Uno_LED_Using_Socket
 
 - Appendix_F_Testing_ESP32-S3_Wi-Fi_Communication
 
